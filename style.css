@@ -47,7 +47,7 @@ body.dark{
     --search-bar: #242526;
 }
 .logo.navLogo img {
-    width: 55%;      /* Reduce the image size by 50% */
+    width: 45%;      /* Reduce the image size by 50% */
     float: left; 
     margin: 2vh 0vh; /* Optional: Add space between image and menu */
 }
@@ -345,7 +345,35 @@ body.dark .search-field i{
 
 
 
-#page2
+#page2 {
+    height: 100vh;
+    width: 100vw;
+    background-color: #0a3cce;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#page2 h1 {
+    margin-left: 15vw;
+    width: 70%;
+    font-size: 3vw;
+    font-weight: 100;
+    color: #ffffff81;
+}
+
+#page2 p {
+    margin: 0;
+    font-size: 2.25vw;
+    line-height: 1.6;
+    color: #fff;
+    text-align: center;
+}
 
 .banner{
     width: 100%;
