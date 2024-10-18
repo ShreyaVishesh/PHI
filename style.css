@@ -346,7 +346,7 @@ body.dark .search-field i{
 
 
 #page2 {
-    height: 120vh;
+    height: 100vh;
     width: 100vw;
     background-image: url(assets/bg.png);
     position: relative;
@@ -363,7 +363,7 @@ body.dark .search-field i{
 
 
 .banner{
-    margin-top: 10vh;
+    margin-top: 18vh;
     width: 100%;
     height: 100vh;
     text-align: center;
@@ -394,7 +394,7 @@ body.dark .search-field i{
     inset: 0 0 0 0;
     transform: 
         rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg))
-        translateZ(410px);
+        translateZ(400px);
 }
 .banner .slider .item img{
     width: 90%;
@@ -404,7 +404,7 @@ body.dark .search-field i{
 .banner .content{
     position: absolute;
     bottom: 0;
-    left: 50%;
+    left: 60%;
     transform: translateX(-50%);
     width: min(1400px, 100vw);
     height: max-content;
@@ -417,7 +417,7 @@ body.dark .search-field i{
 }
 .banner .content h1{
     font-family: 'ICA Rubrik';
-    font-size: 16em;
+    font-size: 14em;
     line-height: 1em;
     color: #25283B;
     position: relative;
@@ -439,9 +439,8 @@ body.dark .search-field i{
     font-size: 3em;
 }
 .banner .content .model{
-    background-image: url(images/model.png);
     width: 100%;
-    height: 75vh;
+    height: 35vh;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -465,7 +464,8 @@ body.dark .search-field i{
         text-align: center;
         width: 100%;
         text-shadow: 0 10px 20px #000;
-        font-size: 6em;
+        font-size: 7em;
+        margin-right: 2vh;
     }
     .banner .content .author{
         color: #fff;
@@ -491,6 +491,7 @@ body.dark .search-field i{
     }
     .banner .content h1{
         font-size: 5em;
+        margin-right: 5vh;
     }
 }
 
