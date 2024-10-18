@@ -7,6 +7,41 @@
         <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
  
         <title>Document</title>
+        <style>
+        
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body{
+                background-color: #D2D2D2;
+                background-image:
+                repeating-linear-gradient(
+                    to right, transparent 0 100px,
+                    #25283b22 100px 101px
+                ),
+                repeating-linear-gradient(
+                    to bottom, transparent 0 100px,
+                    #25283b22 100px 101px
+                );
+            }
+            
+            body::before{
+                position: absolute;
+                width: min(1400px, 90vw);
+                top: 10%;
+                left: 50%;
+                height: 90%;
+                transform: translateX(-50%);
+                content: '';
+                background-image: url(assets/bg1.png);
+                background-size: 100%;
+                background-repeat: no-repeat;
+                background-position: top center;
+                pointer-events: none;
+            }
+        </style>
         <link rel="stylesheet" href="style.css">
         <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
@@ -56,7 +91,39 @@
             </div> 
                 <video src="./assets/video3.mp4" autoplay loop muted></video>
 
-        </div>  
+        </div> 
+
+        <div id="page2">
+            
+            <div class="banner">
+                <div class="slider" style="--quantity: 10">
+                    <div class="item" style="--position: 1"><img src="assets/1.jpg" alt=""></div>
+                    <div class="item" style="--position: 2"><img src="assets/2.jpg" alt=""></div>
+                    <div class="item" style="--position: 3"><img src="assets/3.jpg" alt=""></div>
+                    <div class="item" style="--position: 4"><img src="assets/4.jpg" alt=""></div>
+                    <div class="item" style="--position: 5"><img src="assets/5.jpg" alt=""></div>
+                    <div class="item" style="--position: 6"><img src="assets/6.jpg" alt=""></div>
+                    <div class="item" style="--position: 7"><img src="assets/19.jpg" alt=""></div>
+                    <div class="item" style="--position: 8"><img src="assets/18.jpg" alt=""></div>
+                    <div class="item" style="--position: 9"><img src="assets/17.jpg" alt=""></div>
+                    <div class="item" style="--position: 10"><img src="assets/16.jpg" alt=""></div>
+                </div>
+                <div class="content">
+                    <h1 data-content="MENTORS">
+                        MENTORS
+                    </h1>
+                    <div class="author">
+                        <h2>FOSTER </h2>
+                        <p><b>Stronger Connections</b></p>
+                        
+                    </div>
+                    <div class="model"></div>
+                </div>
+            </div>
+            
+                        
+                    </div> 
+
         <div id="page14">
             <div class="page14-inner">
                 <h1>Twitter</h1>
@@ -122,27 +189,6 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="script.js" ></script>
-
-        <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
-<script>
-  window.botpressWebChat.init({
-      "composerPlaceholder": "Chat with ELECTRODE",
-      "botConversationDescription": "ELECTRODE Bot",
-      "botId": "3f328e32-1df4-43db-8995-1cbc0b4f7122",
-      "hostUrl": "https://cdn.botpress.cloud/webchat/v1",
-      "messagingUrl": "https://messaging.botpress.cloud",
-      "clientId": "3f328e32-1df4-43db-8995-1cbc0b4f7122",
-      "webhookId": "cbcaed66-5d91-4c16-831b-363edae23f05",
-      "lazySocket": true,
-      "themeName": "prism",
-      "frontendVersion": "v1",
-      "useSessionStorage": true,
-      "enableConversationDeletion": true,
-      "showPoweredBy": true,
-      "theme": "prism",
-      "themeColor": "#2563eb"
-  });
-</script>
 
     </body>
 </html>
