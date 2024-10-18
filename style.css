@@ -346,7 +346,7 @@ body.dark .search-field i{
 
 
 #page2 {
-    height: 100vh;
+    height: 120vh;
     width: 100vw;
     background-image: url(assets/bg.png);
     position: relative;
@@ -355,7 +355,6 @@ body.dark .search-field i{
     align-items: center;
     flex-direction: column;
     padding: 40px;
-    border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
