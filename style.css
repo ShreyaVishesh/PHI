@@ -346,7 +346,7 @@ body.dark .search-field i{
 
 
 #page2 {
-    height: 100vh;
+    height: 120vh;
     width: 100vw;
     background-image: url(assets/bg.png);
     position: relative;
@@ -355,7 +355,6 @@ body.dark .search-field i{
     align-items: center;
     flex-direction: column;
     padding: 40px;
-    border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
@@ -364,6 +363,7 @@ body.dark .search-field i{
 
 
 .banner{
+    margin-top: 10vh;
     width: 100%;
     height: 100vh;
     text-align: center;
@@ -394,7 +394,7 @@ body.dark .search-field i{
     inset: 0 0 0 0;
     transform: 
         rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg))
-        translateZ(400px);
+        translateZ(410px);
 }
 .banner .slider .item img{
     width: 90%;
@@ -465,7 +465,7 @@ body.dark .search-field i{
         text-align: center;
         width: 100%;
         text-shadow: 0 10px 20px #000;
-        font-size: 7em;
+        font-size: 6em;
     }
     .banner .content .author{
         color: #fff;
