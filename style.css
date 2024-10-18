@@ -103,6 +103,50 @@ nav .nav-bar .logo a{
     display: none;
 }
 
+.nav-links {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-links li {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px; /* Adjust spacing as needed */
+}
+
+/* .nav-links a {
+    text-decoration: none;
+} */
+
+.dropdown {
+    display: none;
+    position: absolute;
+    list-style: none;
+    background: white;
+    padding: 6px 6px;
+    border: 1.3px solid #a5a3a3; 
+    z-index: 1;
+    width: 12vw;
+    font-size: 8px;
+    border-radius: 5%;
+}
+
+.login-list {
+    font-size: 8px;
+    font-weight: 100;
+    color: #010718;
+}
+
+.nav-links li:hover .dropdown {
+    display: block;
+}
+
+.dropdown li {
+    display: block; 
+    margin: 5px 0; 
+}
+
+
 .nav-bar .nav-links{
     display: flex;
     align-items: center;
@@ -432,7 +476,7 @@ body.dark .search-field i{
     z-index: 2;
     -webkit-text-stroke: 2px #d2d2d2;
     color: transparent;
-    margin-right: 10vh;
+    margin-right: 120vh;
     
 }
 .banner .content .author{
