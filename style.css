@@ -401,14 +401,15 @@ body.dark .search-field i{
     height: 90%;
     object-fit: cover;
 }
+
 .banner .content{
     position: absolute;
     bottom: 0;
-    left: 50%;
+    left: 62%;
     transform: translateX(-50%);
     width: min(1400px, 100vw);
     height: max-content;
-    padding-bottom: 100px;
+    padding-top: 100px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -417,11 +418,13 @@ body.dark .search-field i{
 }
 .banner .content h1{
     font-family: 'ICA Rubrik';
-    font-size: 16em;
+    font-size: 13em;
     line-height: 1em;
     color: #25283B;
     position: relative;
+    margin-left: 10vh;
 }
+
 .banner .content h1::after{
     position: absolute;
     inset: 0 0 0 0;
@@ -429,6 +432,8 @@ body.dark .search-field i{
     z-index: 2;
     -webkit-text-stroke: 2px #d2d2d2;
     color: transparent;
+    margin-right: 10vh;
+    
 }
 .banner .content .author{
     font-family: Poppins;
@@ -438,18 +443,7 @@ body.dark .search-field i{
 .banner .content h2{
     font-size: 3em;
 }
-.banner .content .model{
-    background-image: url(images/model.png);
-    width: 100%;
-    height: 75vh;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background-size: auto 130%;
-    background-repeat: no-repeat;
-    background-position: top center;
-    z-index: 1;
-}
+
 @media screen and (max-width: 1023px) {
     .banner .slider{
         width: 160px;
@@ -476,6 +470,7 @@ body.dark .search-field i{
         width: 100%;
         text-align: center;
         padding: 0 30px;
+        
     }
 }
 @media screen and (max-width: 767px) {
@@ -491,6 +486,8 @@ body.dark .search-field i{
     }
     .banner .content h1{
         font-size: 5em;
+        margin-left: 0;
+        
     }
 }
 
