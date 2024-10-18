@@ -45,19 +45,21 @@ body.dark{
     --search-bar: #242526;
 }
 .logo.navLogo img {
-    width: 80%;      /* Reduce the image size by 50% */
+    width: 55%;      /* Reduce the image size by 50% */
     float: left; 
-    left: -100;    /* Move the image to the left */
-    margin-right: 0px; /* Optional: Add space between image and menu */
+    margin: 2vh 0vh; /* Optional: Add space between image and menu */
 }
+
 nav{
     position: fixed;
     top: 0;
     left: 0;
-    height: 90px;
+    height: 10vh;
     width: 100%;
     background-color: var(--nav-color);
     z-index: 100;
+    display: flex;
+    justify-content: center;
 }
 
 body.dark nav{
@@ -65,14 +67,16 @@ body.dark nav{
 
 }
 
+.a {
+    margin-right: 1vh;
+}
+
 nav .nav-bar{
     position: relative;
     height: 100%;
-    max-width: 1000px;
+    max-width: 1675px;
     width: 100%;
     background-color: var(--nav-color);
-    margin: 0 auto;
-    padding: 0 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -80,14 +84,14 @@ nav .nav-bar{
 
 nav .nav-bar .sidebarOpen{
     color: var(--text-color);
-    font-size: 25px;
-    padding: 5px;
+    font-size: 30px;
+    padding: 1px;
     cursor: pointer;
     display: none;
 }
 
 nav .nav-bar .logo a{
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 500;
     color: var(--text-color);
     text-decoration: none;
@@ -103,17 +107,17 @@ nav .nav-bar .logo a{
 }
 
 .nav-bar .nav-links li{
-    margin: 0 5px;
+    margin: 0 3vh;
     list-style: none;
 }
 
 .nav-links li a{
     position: relative;
-    font-size: 17px;
+    font-size: 25px;
     font-weight: 400;
     color: var(--text-color);
     text-decoration: none;
-    padding: 10px;
+    padding-bottom: 11px;
 }
 
 .nav-links li a::before{
@@ -121,6 +125,7 @@ nav .nav-bar .logo a{
     position: absolute;
     left: 50%;
     bottom: 0;
+    top: 0;
     transform: translateX(-50%);
     height: 6px;
     width: 6px;
@@ -141,8 +146,8 @@ nav .nav-bar .logo a{
 
 .darkLight-searchBox .dark-light,
 .darkLight-searchBox .searchToggle{
-    height: 40px;
-    width: 40px;
+    height: 50px;
+    width: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
