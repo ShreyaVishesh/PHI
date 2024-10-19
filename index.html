@@ -29,11 +29,6 @@
                                 <li><a href="new.html">About</a></li>
                                 <li>
                                     <a href="login.html">Login as Mentor</a>
-                                    <!-- <ul class="dropdown"> -->
-                                        <!-- <li class="login-list"><a href="mentee.html">As Mentee</a></li> -->
-                                        <!-- <li class="login-list"><a href="login.html">As Mentor</a></li> -->
-                                    <!-- </ul> -->
-                                <!-- </li>                             -->
                                 <li><a href="#">Services</a></li>
                             </ul>
                         </div>
@@ -89,8 +84,6 @@
                     </div>
                 </div>
             </div>            
-            
-                        
                     </div> 
 
         <div id="page14">
@@ -114,7 +107,6 @@
         </div>
         </div>
 
-
         <script>
             const body = document.querySelector("body"),
                   nav = document.querySelector("nav"),
@@ -122,36 +114,58 @@
                   searchToggle = document.querySelector(".searchToggle"),
                   sidebarOpen = document.querySelector(".sidebarOpen"),
                   siderbarClose = document.querySelector(".siderbarClose");
-                  let getMode = localStorage.getItem("mode");
-                      if(getMode && getMode === "dark-mode"){
-                        body.classList.add("dark");
-                      }
-            // js code to toggle dark and light mode
-                  modeToggle.addEventListener("click" , () =>{
-                    modeToggle.classList.toggle("active");
-                    body.classList.toggle("dark");
-                    // js code to keep user selected mode even page refresh or file reopen
-                    if(!body.classList.contains("dark")){
-                        localStorage.setItem("mode" , "light-mode");
-                    }else{
-                        localStorage.setItem("mode" , "dark-mode");
-                    }
-                  });
-            // js code to toggle search box
-                    searchToggle.addEventListener("click" , () =>{
-                    searchToggle.classList.toggle("active");
-                  });
-             
-                  
-            //   js code to toggle sidebar
-            sidebarOpen.addEventListener("click" , () =>{
+    
+            let getMode = localStorage.getItem("mode");
+            if (getMode && getMode === "dark-mode") {
+                body.classList.add("dark");
+            }
+    
+            // Toggle dark and light mode
+            modeToggle.addEventListener("click", () => {
+                modeToggle.classList.toggle("active");
+                body.classList.toggle("dark");
+    
+                if (!body.classList.contains("dark")) {
+                    localStorage.setItem("mode", "light-mode");
+                } else {
+                    localStorage.setItem("mode", "dark-mode");
+                }
+            });
+    
+            // Toggle search box
+            searchToggle.addEventListener("click", () => {
+                searchToggle.classList.toggle("active");
+            });
+    
+            // Toggle sidebar
+            sidebarOpen.addEventListener("click", () => {
                 nav.classList.add("active");
             });
-            body.addEventListener("click" , e =>{
+            body.addEventListener("click", e => {
                 let clickedElm = e.target;
-                if(!clickedElm.classList.contains("sidebarOpen") && !clickedElm.classList.contains("menu")){
+                if (!clickedElm.classList.contains("sidebarOpen") && !clickedElm.classList.contains("menu")) {
                     nav.classList.remove("active");
                 }
+            });
+    
+            // Open webpage on image click
+            const images = document.querySelectorAll('.slider .item img');
+            images.forEach((img, index) => {
+                img.addEventListener('click', () => {
+                    const urls = [
+                        'profiles/1.html',
+                        'profiles/2.html',
+                        'profiles/3.html',
+                        'profiles/4.html',
+                        'profiles/5.html',
+                        'profiles/6.html',
+                        'profiles/19.html',
+                        'profiles/18.html',
+                        'profiles/17.html',
+                        'profiles/16.html'
+                    ];
+                    window.open(urls[index], '_blank');
+                });
             });
         </script>
         <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>

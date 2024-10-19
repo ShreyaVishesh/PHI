@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #e1e3e4a7; /* Off-white background */
+    background-color: #f8f9fa; /* Off-white background */
     color: #343a40; /* Dark text */
     margin: 0;
     padding: 0;
@@ -17,7 +17,7 @@ body {
 .profile {
     flex: 1;
     margin-right: 20px;
-    background-color: #007bffb3; /* Blue background */
+    background-color: #007bff; /* Blue background */
     color: white;
     border-radius: 10px;
     padding: 20px;
@@ -57,18 +57,18 @@ li {
 }
 
 h2 {
-    color: #264c75cd; /* Blue heading */
+    color: #007bff; /* Blue heading */
 }
 
-
 .toggle-btn {
-    background-color: #007bffb3;
+    background-color: #1e90ff;
     color: white;
     border: none;
     padding: 10px 15px;
     border-radius: 5px;
     cursor: pointer;
     margin: 10px 0;
+    width: 100%; /* Full width button */
 }
 
 .toggle-btn:hover {
@@ -96,4 +96,13 @@ h2 {
 .section-title {
     display: flex;
     flex-direction: row;
+}
+
+/* Additional styles for contact and experience details */
+#phone, #mobile, #email, #dep, #qualification, #experience {
+    margin: 5px 0; /* Consistent spacing for details */
+}
+
+.publications {
+    margin-top: 20px; /* Space above publications section */
 }
