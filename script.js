@@ -50,3 +50,79 @@ function loco(){
     color:`#fff`
   })
     
+  document.addEventListener('DOMContentLoaded', () => {
+    console.log('DOM fully loaded and parsed');
+
+    // Initialize Locomotive Scroll and GSAP here
+    loco();
+
+    const nextImages = [
+        "assets/1.jpg",
+        "assets/2.jpg",
+        "assets/3.jpg",
+        "assets/4.jpg",
+        "assets/5.jpg",
+        "assets/16.jpg",
+        "assets/17.jpg",
+        "assets/18.jpg",
+        "assets/19.jpg",
+        "assets/15.jpg"
+    ];
+
+    const prevImages = [
+        "assets/6.jpg",
+        "assets/7.jpg",
+        "assets/8.jpg",
+        "assets/9.jpg",
+        "assets/10.jpg",
+        "assets/11.jpg",
+        "assets/12.jpg",
+        "assets/13.jpg",
+        "assets/14.jpg",
+        "assets/15.jpg"
+    ];
+
+    let showingNextSet = false;
+
+    // Function to update images based on the provided array
+    function updateImages(imageArray) {
+        for (let i = 0; i < imageArray.length; i++) {
+            const imgElement = document.getElementById((i + 1).toString());
+            if (imgElement) {
+                imgElement.src = imageArray[i]; // Update image source
+            } else {
+                console.error(`Image element with ID ${i + 1} not found.`);
+            }
+        }
+    }
+
+    const nextArrow = document.getElementById('nextArrow');
+    const prevArrow = document.getElementById('prevArrow');
+
+    console.log('Setting up event listeners');
+
+    if (nextArrow) {
+        nextArrow.addEventListener('click', () => {
+            if (!showingNextSet) {
+                updateImages(nextImages); // Display next image set
+                showingNextSet = true; // Update state
+                console.log('Next arrow clicked: Showing next set of images');
+            }
+        });
+    } else {
+        console.error('Next arrow not found');
+    }
+
+    if (prevArrow) {
+        prevArrow.addEventListener('click', () => {
+            if (showingNextSet) {
+                updateImages(prevImages); // Display previous image set
+                showingNextSet = false; // Update state
+                console.log('Previous arrow clicked: Showing previous set of images');
+            }
+        });
+    } else {
+        console.error('Previous arrow not found');
+    }
+});
+
