@@ -71,6 +71,11 @@ body.dark nav{
 
 .a {
     margin-right: 1vh;
+    width:auto;
+}
+
+.nav-links {
+    width:max-content;
 }
 
 nav .nav-bar{
@@ -111,13 +116,9 @@ nav .nav-bar .logo a{
 .nav-links li {
     position: relative;
     display: inline-block;
-    margin-right: 20px; /* Adjust spacing as needed */
+    margin-right: 20px; 
 }
-
-/* .nav-links a {
-    text-decoration: none;
-} */
-
+/* 
 .dropdown {
     display: none;
     position: absolute;
@@ -129,22 +130,22 @@ nav .nav-bar .logo a{
     width: 12vw;
     font-size: 8px;
     border-radius: 5%;
-}
-
+} */
+/* 
 .login-list {
     font-size: 8px;
     font-weight: 100;
     color: #010718;
-}
-
+} */
+/* 
 .nav-links li:hover .dropdown {
     display: block;
-}
+} */
 
-.dropdown li {
+/* .dropdown li {
     display: block; 
     margin: 5px 0; 
-}
+} */
 
 
 .nav-bar .nav-links{
@@ -449,7 +450,7 @@ body.dark .search-field i{
 .banner .content{
     position: absolute;
     bottom: 0;
-    left: 62%;
+    left: 52%;
     transform: translateX(-50%);
     width: min(1400px, 100vw);
     height: max-content;
@@ -462,11 +463,11 @@ body.dark .search-field i{
 }
 .banner .content h1{
     font-family: 'ICA Rubrik';
-    font-size: 13em;
+    font-size: 12em;
     line-height: 1em;
     color: #25283B;
     position: relative;
-    margin-left: 10vh;
+    /* margin-left: 10vh; */
 }
 
 .banner .content h1::after{
@@ -476,7 +477,7 @@ body.dark .search-field i{
     z-index: 2;
     -webkit-text-stroke: 2px #d2d2d2;
     color: transparent;
-    margin-right: 120vh;
+    /* margin-right: 120vh; */
     
 }
 .banner .content .author{
@@ -530,12 +531,52 @@ body.dark .search-field i{
     }
     .banner .content h1{
         font-size: 5em;
-        margin-left: 0;
+        /* margin-left: 0; */
         
     }
 }
 
 
+/* Arrows styling */
+
+.arrow-section {
+    display: flex;
+    justify-items: center;
+    padding-top: 100px;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    border-radius: 60%;
+    padding: 6px;
+    transition: background-color 0.3s ease;
+    z-index: 10;
+    
+}
+
+.arrow.left {
+    left: 20px;
+    
+}
+
+.arrow.right {
+    right: 8vh;
+}
+
+.arrow:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Optional: Adding hover effects for images */
+.item img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
 
 
 
