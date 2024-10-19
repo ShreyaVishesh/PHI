@@ -71,6 +71,11 @@ body.dark nav{
 
 .a {
     margin-right: 1vh;
+    width:auto;
+}
+
+.nav-links {
+    width:max-content;
 }
 
 nav .nav-bar{
@@ -111,13 +116,9 @@ nav .nav-bar .logo a{
 .nav-links li {
     position: relative;
     display: inline-block;
-    margin-right: 20px; /* Adjust spacing as needed */
+    margin-right: 20px; 
 }
-
-/* .nav-links a {
-    text-decoration: none;
-} */
-
+/* 
 .dropdown {
     display: none;
     position: absolute;
@@ -129,22 +130,22 @@ nav .nav-bar .logo a{
     width: 12vw;
     font-size: 8px;
     border-radius: 5%;
-}
-
+} */
+/* 
 .login-list {
     font-size: 8px;
     font-weight: 100;
     color: #010718;
-}
-
+} */
+/* 
 .nav-links li:hover .dropdown {
     display: block;
-}
+} */
 
-.dropdown li {
+/* .dropdown li {
     display: block; 
     margin: 5px 0; 
-}
+} */
 
 
 .nav-bar .nav-links{
